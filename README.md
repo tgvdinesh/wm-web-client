@@ -1,3 +1,11 @@
+# Wealth Manager Web client
+
+Wealth manager is used to record (_for now_) and present a unified portal for the instrument / account holder. This application in particulat is the bridge between the user web interactive interface and users finincial records. This portal is also used to maintain user's instrument and also to upload statement
+
+### Reference
+
+- https://medium.com/coding-crackerjack/spring-boot-and-reactjs-a50367d56521
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
