@@ -25,7 +25,7 @@ class Transaction extends React.Component<TransactionProps, TransactionState> {
             return (
                 <div>
                     <h2>Transactions</h2>
-                    <table className="table">
+                    <table className="table table-sm">
                         <thead>
                         <tr>
                             <th scope="col">Transaction Reference Number</th>
