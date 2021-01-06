@@ -52,3 +52,44 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+```uml-sequence-diagram
+Title: Hello world example
+Bob->Alice: Hello
+Alice-->Bob: How are you?
+Note left of Bob: Bob thinks
+Bob->>Alice: I'm good, thanks! How about you?
+Alice-->Bob: I'm doing great, thank you!
+```
+
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+
+
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+
+
+
+title Wealth Manager - User Registration
+
+User->Web Client:Login
+Web Client->User:Login Sucessful
+User->Web Client:Add Instrument
+Web Client->Server:Get Instrument
+Server->Database:Fetch applicable instrument
+Database->Server:Instruments
+Server->Web Client:Instruments
+User->Web Client:Choose instrument and save custom Name
