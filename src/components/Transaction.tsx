@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Table} from "react-bootstrap";
 
 export interface TransactionProps {
 
@@ -25,7 +26,7 @@ class Transaction extends React.Component<TransactionProps, TransactionState> {
             return (
                 <div>
                     <h2>Transactions</h2>
-                    <table className="table table-sm">
+                    <Table striped bordered hover size="sm">
                         <thead>
                         <tr>
                             <th scope="col">Transaction Reference Number</th>
@@ -46,7 +47,7 @@ class Transaction extends React.Component<TransactionProps, TransactionState> {
                             )
                         }
                         </tbody>
-                    </table>
+                    </Table>
                 </div>
             );
     }
